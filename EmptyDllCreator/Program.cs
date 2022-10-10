@@ -72,12 +72,16 @@ namespace EmptyDllCreator
             if(!SelectFiles())
             {
                 Console.WriteLine("Error: Select dll files");
+                Console.WriteLine("Press any key...");
+                Console.ReadKey();
                 return;
             }
 
             if (!SelectOutput())
             {
                 Console.WriteLine("Error: Select the output folder");
+                Console.WriteLine("Press any key...");
+                Console.ReadKey();
                 return;
             }
 
